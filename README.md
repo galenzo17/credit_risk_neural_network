@@ -245,7 +245,7 @@ def main():
     plot_training_history(history)
     
     # Guardar el modelo y el escalador
-    model.save('credit_risk_ann_model.h5')
+    model.save('credit_risk_ann_model.keras')
     joblib.dump((feature_columns, scaler), 'model_utils.joblib')
     
     # Evaluar un nuevo prospecto
@@ -268,6 +268,7 @@ def main():
     print(f'Prediction Probability: {prediction_proba[0][0]}')
 
 main()
+
 ```
 
 ## Análisis de los Pasos para Probar, Visualizar y Medir la Calidad del Modelo
